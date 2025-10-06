@@ -18,3 +18,5 @@ git branch -m changeName (change the name of branch)
 git checkout -b branchName (change branch or create new branch)
 git reset --hard HEAD~1  remove latest commit.
 git branch -D feature
+git checkout --. undo all stage data
+
