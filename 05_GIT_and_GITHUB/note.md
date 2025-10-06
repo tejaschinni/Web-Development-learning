@@ -16,3 +16,5 @@ git log commit logs
 git branch shows current branch
 git branch -m changeName (change the name of branch)
 git checkout -b branchName (change branch or create new branch)
+git reset --hard HEAD~1  remove latest commit.
+git branch -D feature
