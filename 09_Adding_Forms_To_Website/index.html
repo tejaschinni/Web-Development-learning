@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form action="/09_Adding_Forms_To_Website/" method="GET">
+      <label for="name">Type Text</label>
+      <input
+        type="text"
+        name="typeText"
+        id="textType"
+        placeholder="Enter Text"
+      />
+
+      <label for="name">Type Email</label>
+      <input
+        type="email"
+        name="typeEmail"
+        id="emailType"
+        placeholder="Enter Email"
+      />
+
+      <label for="name">Type Number</label>
+      <input
+        type="number"
+        name="typeNumber"
+        step="1"
+        id="numberType"
+        placeholder="Enter Number"
+      />
+
+      <label for="name">Type Password</label>
+      <input
+        type="password"
+        name="typePassword"
+        id="passwordType"
+        placeholder="Enter password"
+      />
+
+      <label for="name">Type Date</label>
+      <input
+        type="date"
+        name="typeDate"
+        id="dateType"
+        placeholder="Select Date"
+      />
+      <hr />
+
+      <h2>Select the option</h2>
+
+      <div class="from-inline">
+        <input type="radio" name="inputType" id="text" value="1" />
+        <label for="text">Text</label>
+      </div>
+
+      <div class="from-inline">
+        <input type="radio" name="inputType" id="phone" value="2" />
+        <label for="phone">Phone</label>
+      </div>
+
+      <div class="from-inline">
+        <input type="radio" name="inputType" id="emailid" value="13 />
+        <label for="emailid">Email</label>
+      </div>
+
+      <button>Enter</button>
+    </form>
+  </body>
+</html>
