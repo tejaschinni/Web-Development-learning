@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>HTML Forms</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <header>
+    <h1>Demo Form</h1>
+  </header>
+  <main>
     <form action="/09_Adding_Forms_To_Website/" method="GET">
-      <label for="name">Type Text</label>
-      <input
-        type="text"
-        name="typeText"
-        id="textType"
-        placeholder="Enter Text"
-      />
+      <section>
+        <ul>
+          <li>
+            <label for="name">Type Text</label>
+            <input type="text" name="typeText" id="textType" placeholder="Enter Text"  required/>
+          </li>
+          <li>
+            <label for="name">Type Email</label>
+            <input type="email" name="typeEmail" id="emailType" placeholder="Enter Email" />
+          </li>
 
-      <label for="name">Type Email</label>
-      <input
-        type="email"
-        name="typeEmail"
-        id="emailType"
-        placeholder="Enter Email"
-      />
+          <li></li>
+          <label for="name">Type Number</label>
+          <input type="number" name="typeNumber" step="1" id="numberType" placeholder="Enter Number" />
+          </li>
+          <li>
+            <label for="name">Type Email</label>
+            <input type="email" name="typeEmail" id="emailType" placeholder="Enter Email" required  />
+          </li>
+          <li>
+            <label for="name">Type Number</label>
+            <input type="number" name="typeNumber" step="1" id="numberType" placeholder="Enter Number" required min="18" />
+          </li>
+          <li>
+            <label for="name">Type Password</label>
+            <input type="password" name="typePassword" id="passwordType" placeholder="Enter password" required minlength="6" />
+          </li>
+        </ul>
+      </section>
 
-      <label for="name">Type Number</label>
-      <input
-        type="number"
-        name="typeNumber"
-        step="1"
-        id="numberType"
-        placeholder="Enter Number"
-      />
+      <section>
+        <ul>
+          <li>
+            <label for="name">Type Date</label>
+            <input type="date" name="typeDate" id="dateType" placeholder="Select Date" required min="1921-01-01" max="2025-01-01" />
+          </li>
+          <li>
+            <label for="message">Enter the message</label>
+            <textarea name="msg" id="message" rows="8"></textarea>
+          </li>
+        </ul>
+      </section>
 
-      <label for="name">Type Password</label>
-      <input
-        type="password"
-        name="typePassword"
-        id="passwordType"
-        placeholder="Enter password"
-      />
-
-      <label for="name">Type Date</label>
-      <input
-        type="date"
-        name="typeDate"
-        id="dateType"
-        placeholder="Select Date"
-      />
       <hr />
+      <section>
+        <label for="colorFv">Select Color</label>
+        <select name="favColor" id="colorFv">
+          <option value="1">blue</option>
+          <option value="2">red</option>
+          <option value="3">green</option>
+        </select>
 
-      <h2>Select the option</h2>
+        <h2>Select the option</h2>
 
-      <div class="from-inline">
-        <input type="radio" name="inputType" id="text" value="1" />
-        <label for="text">Text</label>
-      </div>
+        <div class="from-inline">
+          <input type="radio" name="inputType" id="text" value="1" required />
+          <label for="text">Text</label>
+        </div>
 
-      <div class="from-inline">
-        <input type="radio" name="inputType" id="phone" value="2" />
-        <label for="phone">Phone</label>
-      </div>
+        <div class="from-inline">
+          <input type="radio" name="inputType" id="phone" value="2" required />
+          <label for="phone">Phone</label>
+        </div>
 
-      <div class="from-inline">
-        <input type="radio" name="inputType" id="emailid" value="13 />
-        <label for="emailid">Email</label>
-      </div>
+        <div class="from-inline">
+          <input type="radio" name="inputType" id="emailid" value="13" required />
+          <label for="emailid">Email</label>
+        </div>
+        <div class="from-inline">
+          <input type="checkbox" id="agree-terms" name="agree" />
+          <label for="agree-terms">Agree Terms</label>
+        </div>
 
-      <button>Enter</button>
+        <div class="from-inline">
+          <input type="checkbox" id="contact-email" name="contact" value="email" />
+          <label for="contact-email">Contact Email</label>
+        </div>
+
+        <div class="from-inline">
+          <input type="checkbox" id="contact-number" name="contact" value="number" />
+          <label for="contact-number">Contact Number</label>
+        </div>
+      </section>
+
+      <section>
+        <button type="reset">Clear</button>
+        <button>Enter</button>
+      </section>
     </form>
-  </body>
+  </main>
+</body>
+
 </html>

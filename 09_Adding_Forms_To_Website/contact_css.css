@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(58, 171, 227);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+form {
+    width: 40rem;
+    background-color: white;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+section {
+    margin-bottom: 1rem;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    color: blue;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,textarea, select {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    width: 100%;
+    display: block;
+    border-radius:4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(163, 212, 237);
+}
+
+button {
+    font: inherit;
+    border: 1px solid lightblue;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.inline-control {
+    display: flex;
+}
+
+.inline-control label {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+
+.inline-control input {
+    width: auto;
+}
+

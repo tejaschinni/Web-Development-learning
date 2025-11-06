@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="contact_css.css" />    
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="/09_Adding_Forms_To_Website/" method="GET">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your name" required />
+                    </li>
+                    <li>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    </li>
+                    <li>
+                        <label for="phonenumber">Your Phone Number</label>
+                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required minlength="5" />
+                    </li>
+                    <li>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Enter your message" required rows="6" minlength="10" maxlength="100"></textarea>
+                    </li>                    
+                </ul>
+            </section>
+            <section>
+                <label for="feedback">How did you find us?</label>
+                <select name="feedback" id="feedback" required>
+                    <option value="search">Web Search</option>
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend/Colleague</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="inline-control">
+                        <input type="radio" name="reply" id="reply-phone" value="phone" required >
+                        <label for="reply-phone">Call me</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" name="reply" id="reply-email" value="email" required>
+                        <label for="reply-email">Email me</label>
+                    </li>
+                    <li class="inline-control">
+                        <input type="radio" name="reply" id="reply-none" value="none" required>
+                        <label for="reply-none">Don't Reply</label>
+                    </li>
+                </ul>
+            </section>
+            <section class="inline-control">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Accept Terms</label>
+            </section>
+            <section>
+                <button type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

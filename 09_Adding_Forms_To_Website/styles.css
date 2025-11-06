@@ -4,20 +4,32 @@ body {
     /* margin: 8rem; */
 }
 
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 form {
     width: 30rem;
     margin: 3rem auto;
     background-color: rgb(255,255,255);
     padding: 1rem;
     border-radius: 6px;
+}
 
+ul {
+    list-style: none;
 }
 
 label {
     margin-bottom: 0.5rem;
 }
 
-input {
+textarea {
+    resize: none;
+}
+
+input, textarea,select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -28,7 +40,7 @@ input {
     color: rgb(19, 1, 1);
 }
 
-input:focus {
+input:focus, textarea:focus {
     background-color: blue;
     color: blanchedalmond;
 }
