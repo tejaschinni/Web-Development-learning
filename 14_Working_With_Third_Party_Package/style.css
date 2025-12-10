@@ -1,0 +1,33 @@
+#carExample {
+    width: 90%;
+    align-items: center;
+    background-color: red;
+}
+
+#carExample img{
+    /* height: 20rem;
+    width: 30rem; */
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+section {
+    width: 100%;
+    max-width: 50rem;
+    margin: 2rem auto;
+
+
+}
+
+#main-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+
+
